@@ -1,0 +1,10 @@
+/* Installation d'une font familly pour s'essayer a l'exercice */
+@font-face {
+    font-family:"Europa-Regular" ;
+    src: url("/fonts/Explora-Regular.ttf")format("ttf");
+}
+.About h1{
+    font-family: "Europa-Regular" ;
+    src: url("/fonts/Explora-Regular.ttf") format("ttf");
+
+}
