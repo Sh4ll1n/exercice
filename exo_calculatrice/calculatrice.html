@@ -1,0 +1,49 @@
+<!-- Créez une page « calculatrice.html ».
+La page calculatrice contient un formulaire avec une sélection déroulante qui nous permet de choisir le signe
+de l’opération (addition, soustraction, multiplication, division) :
+Exemple :
+Ces informations sont transmises et ensuite calculées.
+Exemple :
+Dans une alerte: L’opération saisie suivi du signe égal et du résultat. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+</head>
+<body>
+        <span class="calculatrice" onclick="">Faire apparaitre la calculatrice</span>
+        <span class="nocalculatrice">Faire disparaitre la calculatrice</span>
+        
+        <form id="form" action="#" method="post" onsubmit="calcul(event)">
+            <label for="num1">Nombres 1</label>
+            <input type="text" name="num1" id="num1">
+
+            <label for="op">Opérateur</label>
+            <select name="op" id="op">
+                <option value=""></option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+
+            <label for="num2">Nombres 2</label>
+            <input type="text" name="num2" id="num2">
+            
+            <label for="info"></label>
+            
+            <input type="submit">
+            <div id="resultat"></div>
+            <input class="info" type="text" name="info" id="info" disabled>
+        
+        </form>
+    
+    
+    
+</body>
+<script src="calculatrice.js"></script>
+</html>
